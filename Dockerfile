@@ -1,7 +1,6 @@
 FROM node:alpine3.22
 
-# 将工作目录从 /tmp 修改为 /app，避免被 Render 的临时文件系统覆盖
-WORKDIR /app
+WORKDIR /tmp
 
 COPY index.js index.html package.json ./
 
